@@ -1,0 +1,63 @@
+include mixins
+include price_table
+doctype html
+html(lang='ru')
+  +dev_head('Real Прайс', false, false, false, true)
+
+  body.inner_page.open_aside_menu
+    .rect_1024
+    .wrapper
+      +header(4)
+
+      .base
+        section.section_w.white_section
+          .section_inner.article_mode.clearfix
+            .aside_border_block
+            .aside_menu.border_mod
+              +aside_menu(1, 'прайс услуг')
+              
+            .main_content
+              .article_block.border_mod
+                h2.gl_caption.article_caption.priceTitle Дизайн и проектирование
+                .priceTableLoader
+                  +price_table()
+
+                .price_description
+                  .priceDescription(data-description=1)
+                    h3 В стоимость услуг входит: 
+                    p Авторский надзор
+                    p Внесение корректировок в проект  
+  
+                  .priceDescription(data-description=2 style='display:none')
+                    h3 В стоимость услуг входит:  
+                    p Услуги прораба
+                    p Технический надзор
+                    p Качественный надзор
+                    p Материальная ответственность компании
+                    p Гарантия качества выполненных работ — 3 года
+                    
+                ul.more_links_block
+                  li.more_link_item: a.gl_link(href='#') С чего начать ремонт?  <br>  Зачем нужен дизайн-проект?
+                  li.more_link_item: a.gl_link(href='#') Направления и стили дизайна интерьера            
+                    
+          //- .section_inner
+            .more_links_holder
+              ul.more_links_block
+                li.more_link_item: a.gl_link(href='#') С чего начать ремонт?  <br>  Зачем нужен дизайн-проект?
+                li.more_link_item: a.gl_link(href='#') Направления и стили дизайна интерьера         
+            
+          //- .section_inner.article_mode.clearfix.mob_block_ratator
+            .aside_border_block
+            .aside_menu
+              ul.more_links_block
+                li.more_link_item: a.gl_link(href='#') С чего начать ремонт?  <br>  Зачем нужен дизайн-проект?
+                li.more_link_item: a.gl_link(href='#') Направления и стили дизайна интерьера
+            .main_content
+              .article_block
+                .price_description
+                  h3 В стоимость услуг входит:  
+                  p Авторский надзор
+                  p Внесение корректировок в проект
+
+      +footer()
+    +popups()

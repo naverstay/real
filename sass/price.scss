@@ -1,0 +1,93 @@
+.price_table {
+  width           : 100%;
+  border-collapse : collapse;
+
+  td {
+    font-size : 15px;
+    color     : #8d8d8d;
+    border    : 1px solid #d4d4d4;
+    padding   : 5px;
+  }
+
+  .col_1 {
+    width : 70%;
+  }
+
+  .col_2 {
+    width : 14%;
+  }
+
+  .col_3 {
+    width : 16%;
+  }
+
+  .price_t_title {
+    text-align : center;
+
+    td {
+      color      : #fff;
+      background : #333;
+    }
+
+  }
+
+  .price_t_caption {
+    text-align : center;
+    font-size  : 20px;
+
+    td {
+      background : #333;
+      font-size  : 14px;
+      color      : #fff;
+    }
+
+  }
+
+  .price_t_subcaption {
+    text-align : center;
+
+    td {
+      background : #808080;
+      font-size  : 14px;
+      color      : #fff;
+    }
+
+  }
+
+}
+
+.price_img {
+  text-align : center;
+
+  img {
+    display        : inline-block;
+    vertical-align : top;
+    max-width      : 100%;
+  }
+}
+
+.price_link_holder {
+  @extend %translate3d;
+  @include transition_all(transform .3s);
+
+  @include respond-to-min($desktop) {
+    text-align : center;
+  }
+
+  @include respond-to-max($desktop) {
+
+    .open_aside_menu & {
+      -webkit-transform : translate(100vw, 0);
+      -ms-transform     : translate(100vw, 0);
+      transform         : translate(100vw, 0);
+    }
+  }
+}
+
+.price_table_row {
+  display : none;
+}
+
+.service_name {
+  display : table-row !important;
+}

@@ -1,0 +1,327 @@
+.review_list {
+
+  @include respond-to-min($desktop) {
+
+    .review_item {
+      padding-left : 20px;
+      float        : left;
+      width        : 50%;
+
+      &:nth-child(3n) {
+        width : 100%;
+      }
+    }
+  }
+
+  @include respond-to-min($desktop_large) {
+    margin-left : -20px;
+  }
+}
+
+.review_unit {
+  position      : relative;
+  margin-bottom : 15px;
+  padding-top   : 25px;
+
+  p {
+    font-size     : 15px;
+    line-height   : 1.6;
+    color         : #393939;
+    margin-bottom : 10px;
+
+    &.open_quote {
+      &:before {
+        content : '« ';
+
+        @include respond-to-min($tablet) {
+          margin-left : -10px;
+        }
+      }
+    }
+
+    &.close_quote {
+      &:after {
+        content : ' »';
+      }
+    }
+  }
+
+  @include respond-to-min($tablet) {
+    padding-left : 120px;
+    min-height   : 100px;
+  }
+
+  @include respond-to-min($desktop) {
+    padding-left : 130px;
+  }
+
+}
+
+.review_author {
+  margin        : 0 auto 20px;
+  border-radius : 100%;
+  width         : 100px;
+  height        : 100px;
+  padding       : 3px;
+  border        : 2px solid #4f70b7;
+  overflow      : hidden;
+
+  img {
+    display       : block;
+    border-radius : 100%;
+    width         : 90px;
+    height        : 90px;
+  }
+
+  @include respond-to-min($tablet) {
+    position : absolute;
+    top      : 5px;
+    left     : 0;
+    margin   : 0;
+  }
+}
+
+.review_info {
+  color : #999;
+  font  : 15px/1.3 $antquabi;
+}
+
+.article_v2 {
+  font-size   : 14px;
+  color       : #8d8d8d;
+  line-height : 1.75;
+
+  h3 {
+    margin-bottom : 24px;
+  }
+
+  > p {
+    margin-bottom : 24px;
+
+    &:first-of-type {
+      padding-top : 40px;
+    }
+  }
+
+  ul {
+    margin-bottom : 20px;
+
+    li {
+      text-indent : 35px;
+    }
+
+    &.no_action {
+      margin-bottom : 0;
+
+      li {
+        position    : relative;
+        text-indent : 20px;
+
+        &:before {
+          content    : '';
+          position   : absolute;
+          top        : 6px;
+          left       : 0;
+          width      : 13px;
+          height     : 13px;
+          background : url(../i/sprite.png) no-repeat -195px -1px;
+        }
+      }
+    }
+
+    &.design_benefits {
+      margin-bottom : 10px;
+      counter-reset : list1;
+
+      li {
+        position        : relative;
+        text-indent     : 70px;
+        list-style-type : none;
+
+        &:before {
+          position          : absolute;
+          left              : -40px;
+          top               : -5px;
+          font-size         : 18px;
+          color             : #000;
+          counter-increment : list1; /* Увеличиваем значение счетчика */
+          content           : "+ " counter(list1) ". "; /* Выводим число */
+        }
+      }
+    }
+  }
+
+  ol {
+    li {
+      list-style          : decimal;
+      list-style-position : inside;
+      margin-bottom       : 24px;
+
+      p {
+        display : inline;
+      }
+    }
+  }
+
+  img {
+    display   : block;
+    max-width : 100%;
+  }
+
+  .fl_right {
+    float       : right;
+    margin-left : 25px;
+
+    @include respond-to-max($desktop_large) {
+      //margin-right : 0 !important;
+    }
+  }
+
+  .fl_left {
+    float        : left;
+    margin-right : 25px;
+
+    @include respond-to-max($desktop_large) {
+      //margin-left : 0 !important;
+    }
+  }
+
+  .fl_left,
+  .fl_right {
+    margin-bottom : 20px;
+
+    @include respond-to-min($desktop) {
+      margin-bottom : 50px;
+    }
+
+  }
+
+  .art_2,
+  .art_1,
+  .art_3 {
+    float     : right;
+    margin    : 0 0 50px 25px;
+    max-width : 40%;
+  }
+
+  .art_1 {
+    margin-right : 8px;
+    margin-top   : -27px;
+  }
+
+  .art_2 {
+    margin-right : -279px;
+    margin-top   : 23px;
+  }
+
+  .art_3 {
+    margin-right : -182px;
+    margin-top   : 40px;
+  }
+
+  .img_centered {
+    display        : inline-block;
+    vertical-align : top;
+    max-width      : 100%;
+    margin-bottom  : 20px;
+
+    @include respond-to-min($desktop) {
+      margin-bottom : 50px;
+    }
+  }
+
+  @include respond-to-max($desktop) {
+    padding-top : 20px;
+  }
+
+  @include respond-to-max($desktop_large + 100) {
+
+    .fl_left,
+    .fl_right {
+      float        : none;
+      margin-left  : 0;
+      margin-right : 0;
+    }
+
+    .art_2 {
+      float  : right;
+      margin : 0 0 0 20px;
+    }
+
+    .art_1,
+    .art_3 {
+      float  : left;
+      margin : 0 20px 0 0;
+    }
+  }
+
+  @include respond-to-max(320px) {
+
+    .art_2,
+    .art_1,
+    .art_3 {
+      float  : none;
+      margin : 0 0 10px;
+    }
+  }
+}
+
+.surprise_block {
+  margin-bottom : 10px;
+
+  @include respond-to-min($desktop) {
+    margin-right : -50px;
+    margin-top   : 40px;
+  }
+}
+
+.article_end {
+  padding-top   : 15px;
+  border-bottom : 1px solid #d4d4d4;
+}
+
+.share_box {
+  position : relative;
+  padding  : 60px 0 30px;
+
+  &:before {
+    content     : '';
+    position    : absolute;
+    top         : 10px;
+    left        : 50%;
+    margin-left : -25px;
+    height      : 50px;
+    width       : 50px;
+    background  : url(../i/sprite.png) no-repeat -160px -40px;
+    opacity     : .5;
+  }
+
+  @include respond-to-min($desktop) {
+    padding : 90px 0 65px;
+
+    &:before {
+      top : 20px;
+    }
+  }
+
+  h4 {
+    font-size      : 18px;
+    text-transform : uppercase;
+    margin-bottom  : 25px;
+  }
+
+  p {
+    margin-bottom : 35px;
+    font-size     : 14px;
+  }
+
+  .sh_item {
+    @include transition_all(opacity .3s);
+    opacity : .4;
+
+    &:hover {
+      opacity : 1;
+    }
+  }
+
+}

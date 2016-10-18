@@ -1,0 +1,70 @@
+include mixins
+doctype html
+html(lang='ru')
+  +dev_head('Real index')
+
+  body.index_page
+    .rect_1024
+    .wrapper
+      +header(0)
+      .hero_block
+        img.hero_img.mob_hidden_(src='i/hero_5.jpg')
+        //- img.hero_img.mob_only(src='i/hero_4_mob.jpg')
+
+      .base
+        section.section_w.white_section: .section_inner
+          .benefits_list_w: ul.benefits_list
+            li.benefit_item
+              .benefit_block: .benefit_block_inner
+                .clearfix.benefit_title
+                  h3.gl_caption Надежно
+                  .benefit_icon: img(src='i/benefit_1.png')
+                .benefit_info Делаем то, что Вы хотите,  <br>  потому что знаем Как.
+                p 3     года гарантии на все предоставленные услуги
+                p 13   лет работы в строительноремонтной сфере 
+                p 30   успешно завершенных объектов из 30 начатых
+                p 300  наименований выполняемых услуг
+
+            li.benefit_item
+              .benefit_block: .benefit_block_inner
+                .clearfix.benefit_title
+                  h3.gl_caption Просто
+                  .benefit_icon: img(src='i/benefit_2.png')
+                .benefit_info Упрощаем Вашу жизнь   <br>             и экономим время
+
+                p Не нужно искать  разных специалистов
+                p У нас комплекс услуг от дизайна до гарантии
+                p Не думайте где и как заказать материалы
+                p Мы доставким все материалы на объект
+                p Вы утверждаете сметы и принимаете работу
+
+            li.benefit_item
+              .benefit_block: .benefit_block_inner
+                .clearfix.benefit_title
+                  h3.gl_caption выгодно
+                  .benefit_icon: img(src='i/benefit_3.png')
+                .benefit_info Сокращаем расходы  <br>  и минимизируем риски
+
+                p Никаких переделок и лишних работ
+                p Оптимальная смета - идеальное выполнение 
+                p Никакого мониторинга цен на материалы
+                p Только проверенные материалы по лучшей цене
+
+        section.section_w.gray_section: .section_inner
+          .gl_caption.section_caption.color_white.text_center Как сделать ремонт <br> ОДИН  раз и на 30 лет?
+          .steps_holder: ul.step_list.clearfix
+            li.step_item
+              .step_img: img(src='i/step_1.png')
+              .step_caption Позвонить нам 
+            li.step_item
+              .step_img: img(src='i/step_2.png')
+              .step_caption Вызвать замерщика бесплатно
+            li.step_item
+              .step_img: img(src='i/step_3.png')
+              .step_caption Заказать просчет сметы бесплатно
+            li.step_item
+              .step_img: img(src='i/step_4.png')
+              .step_caption Заказать ремонт под ключ
+
+      +footer()
+    +popups()

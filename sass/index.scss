@@ -1,0 +1,178 @@
+
+.benefits_list_w {
+  margin : -23px 0;
+
+  @include respond-to-min($desktop) {
+    margin : -23px -1%  -23px -57px;
+  }
+
+  @include respond-min-max($desktop, $desktop_large) {
+    margin : -23px -1%  -23px (-$aside_padding_mob);
+  }
+}
+
+.benefits_list {
+
+  @include respond-to-min($desktop) {
+    display      : table;
+    width        : 100%;
+    height       : 100%;
+    table-layout : fixed;
+  }
+}
+
+.benefit_item {
+  font-size  : 12px;
+  text-align : left;
+
+  @include respond-to-max($desktop) {
+    &:last-child {
+      .benefit_block {
+        margin-bottom : 0;
+      }
+    }
+  }
+
+  @include respond-to-min($desktop) {
+    display      : table-cell;
+    height       : 100%;
+    //width          : 33%;
+    padding-left : 57px;
+  }
+
+  @include respond-min-max($desktop, $desktop_large) {
+    padding-left : $aside_padding_mob;
+  }
+}
+
+.benefit_title {
+  line-height   : 45px;
+  margin-bottom : 20px;
+  padding       : 0 40px 0 5px;
+}
+
+.benefit_block_inner {
+  padding : 15px;
+
+  @include respond-to-min($desktop) {
+    min-height : 315px;
+    height     : 100%;
+    padding    : 7% 3% 10px 11%;
+  }
+
+  @include respond-min-max($desktop, $desktop_large) {
+    padding-left : $aside_padding_mob;
+  }
+}
+
+.benefit_block {
+  background : #f6f6f6;
+  position   : relative;
+  max-width  : 360px;
+  margin     : 0 auto $aside_padding_mob * 2;
+
+  @include respond-to-min($desktop) {
+    margin-bottom : 0;
+    height        : 100%;
+  }
+
+  .gl_caption {
+    font-size      : 15px;
+    text-transform : uppercase;
+    float          : left;
+    color          : #000;
+  }
+
+  .benefit_icon {
+    float : right;
+
+    img {
+      display        : inline-block;
+      vertical-align : middle;
+    }
+  }
+
+  .benefit_info {
+    color         : #393939;
+    line-height   : 1.65;
+    margin-bottom : 18px;
+    font-size     : 14px;
+  }
+
+  p {
+    margin-bottom : 10px;
+  }
+}
+
+.steps_holder {
+  max-width : 1000px;
+  margin    : 0 auto;
+}
+
+.step_list {
+  text-align : center;
+
+  @include respond-to-min($desktop) {
+    margin-left : -40px;
+    text-align  : center;
+    font-size   : 0;
+  }
+
+}
+
+.step_img {
+  margin-bottom : $aside_padding_mob;
+
+  img {
+    display        : inline-block;
+    vertical-align : top;
+  }
+}
+
+.step_item {
+  text-align    : center;
+  position      : relative;
+  margin-bottom : $aside_padding_mob * 3;
+
+  @include respond-to-min($tablet) {
+    display        : inline-block;
+    vertical-align : top;
+    font-size      : 12px;
+    width          : 50%;
+    padding        : 0 $aside_padding_mob;
+
+    .step_img {
+      margin-bottom : 30px;
+    }
+
+  }
+
+  @include respond-to-min($desktop) {
+    width         : 25%;
+    padding-left  : 40px;
+    margin-bottom : 100px;
+
+    &:before {
+      content       : '';
+      position      : absolute;
+      top           : 50px;
+      left          : 9px;
+      border-radius : 100%;
+      background    : #fff;
+      width         : 12px;
+      height        : 12px;
+    }
+
+    &:first-child {
+      &:before {
+        display : none;
+      }
+    }
+  }
+}
+
+.step_caption {
+  font-size      : 17px;
+  color          : #fff;
+  letter-spacing : -.3px;
+}

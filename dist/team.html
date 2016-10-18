@@ -1,0 +1,48 @@
+include mixins
+doctype html
+html(lang='ru')
+  +dev_head('Real Команда')
+
+  body.inner_page
+    .rect_1024
+    .wrapper
+      +header(3)
+      .base
+        section.section_w.white_section: .section_inner.article_mode
+          h2.gl_caption.edged_caption.block_caption.mt_40
+            span наша команда
+            
+          .director_block
+            .director_slogan
+              .director_slogan_text «Добиться идеала  <br>  возможно  лишь вкладывая душу  <br> в каждый этап работ»
+              p Андрей Медяный, основатель компнии Re
+                span.red_a a
+                | l.
+            .director_photo: img(src='i/team/director.jpg')
+          
+          .team_block.clearfix
+            .team_img: img(src='i/team/team.jpg')
+            .team_text 
+              h2 Интересы заказчиков - наш  <br> основной приоритет
+            
+              p.fs_it ‘Сегодня, мы работаем на 80% по рекомендации благодарных клиентов’ 
+              p Компания 
+                span.color_black Re
+                span.red_a a
+                span.color_black l 
+                |  была создана не бизнесменами и не маркетологами,а мастером-отделочником, выпускником технического ВУЗа,Медяным Андреем. Ведь кому, как не мастеру лучше знать, в чемзаключаются «подводные камни» любого ремонта или строительства?
+              
+              p Проработав в этой сфере 2 года, для Андрея стала очевидна проблеманехватки хороших специалистов на строительном рынке. Поэтому, с 2003 года была поставлена цель: собрать команду из людей, которые являются не только высококлассными специалистами своей области,но и любящих свое дело. Не один год переделывая ремонты после других «профессионалов», совершенство во всем остается приоритетом специалистов компании 
+                span.color_black Re
+                span.red_a a
+                span.color_black l. 
+                a.gl_link(href='#') Доказательство - фото наших работ
+              
+          .article_end
+            
+          .team_video
+            iframe.youtube_player(title='YouTube video player', width='100%', height='615px', type='text/html', src='https://- www.youtube.com/embed/YrLk4vdY28Q', frameborder='0', allowfullscreen='')
+
+
+      +footer()
+    +popups()

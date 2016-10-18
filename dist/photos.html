@@ -1,0 +1,337 @@
+include mixins
+doctype html
+html(lang='ru')
+  +dev_head('Real Фото работ', true)
+
+  body.inner_page
+    .rect_1024
+    .wrapper
+      +header(2)
+
+      .base
+        section.section_w.white_section: .section_inner.article_mode.clearfix
+          .photo_slider
+            .slider_holder.swiper_btn_v3.galSlider
+              #photos_gallery.gallery_container
+                #gal_prev.swiper-button-prev
+                #gal_next.swiper-button-next
+                .gallery_wrapper.galleryWrapper.clearfix
+                  .gallery_slide.swiper-slide-active(data-slider=0)
+                    .swiper-container.animated.fadeIn_
+                      .swiper-wrapper.clearfix
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_1/1.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_1/2.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_1/3.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_1/4.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_1/5.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_1/6.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_1/7.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_1/8.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_1/9.jpg')
+                    //- .swiper-button-prev
+                    //- .swiper-button-next
+                    .swiper-pagination
+                  
+                  .gallery_slide(data-slider=1)
+                    .swiper-container.animated.fadeOut_
+                      .swiper-wrapper.clearfix
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_2/1.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_2/2.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_2/3.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_2/4.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_2/5.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_2/6.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_2/7.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_2/8.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_2/9.jpg')
+                    //- .swiper-button-prev
+                    //- .swiper-button-next
+                    .swiper-pagination
+                      
+                  .gallery_slide(data-slider=2)
+                    .swiper-container.animated.fadeOut_
+                      .swiper-wrapper.clearfix
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/1.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/2.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/3.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/4.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/5.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/6.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/7.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/8.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/9.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/10.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/11.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/12.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/15.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/30.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_3/32.jpg')
+                    //- .swiper-button-prev
+                    //- .swiper-button-next
+                    .swiper-pagination
+                      
+                  .gallery_slide(data-slider=3)
+                    .swiper-container.animated.fadeOut_
+                      .swiper-wrapper.clearfix
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/1.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/2.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/3.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/4.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/5.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/6.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/7.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/8.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/9.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/10.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/11.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/12.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/13.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/14.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_4/15.jpg')
+                    //- .swiper-button-prev
+                    //- .swiper-button-next
+                    .swiper-pagination
+                      
+                  .gallery_slide(data-slider=4)
+                    .swiper-container.animated.fadeOut_
+                      .swiper-wrapper.clearfix
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_5/8.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_5/9.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_5/10.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_5/11.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_5/13.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_5/14.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_5/15.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_5/16.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_5/17.jpg')
+                        .swiper-slide
+                          +photo_slide('i/portfolio/flat_5/18.jpg')
+                    //- .swiper-button-prev
+                    //- .swiper-button-next
+                    .swiper-pagination
+                      
+                .slider_title.onScrollLoader(data-scroll-class='move_it' data-scroll-offset='-70')
+                  h2 наши выполненные работы
+                  
+            .swiper_btn_v2.bullets_slider: #photos_bullets.swiper-container.noSwipe
+              .swiper-wrapper
+                .swiper-slide(data-slide-index=0)
+                  .slide_name: span квартира-студия
+                  
+                .swiper-slide(data-slide-index=1)
+                  .slide_name: span  2х комнатная  квартира
+                  
+                .swiper-slide(data-slide-index=2)
+                  .slide_name: span  частный дом 3 этажа
+                  
+                .swiper-slide(data-slide-index=3)
+                  .slide_name: span  частный дом 2 этажа
+                  
+                .swiper-slide(data-slide-index=4)
+                  .slide_name: span  баня
+
+              #bullet_prev.swiper-button-prev
+              #bullet_next.swiper-button-next
+
+            .photo_slider_description.clearfix.photoSliderDescription
+              #bullet_pagination.swiper-pagination.bullet_pagination
+
+              #photos_titles.swiper-container.photos_titles
+                .swiper-wrapper.clearfix
+                  .swiper-slide
+                    .slide_title Квартира-студия 
+                      span.mob_hidden  <br> 
+                      |  High-Tech 
+                      span.mob_hidden  <br>
+                      |  ул.&nbsp;Зерновая
+                  .swiper-slide
+                    .slide_title 2-х комнатная квартира 
+                      span.mob_hidden  <br>
+                      |  Минимализм 
+                      span.mob_hidden  <br>
+                      |  ул.&nbsp;Блюхера
+                  .swiper-slide
+                    .slide_title Частный дом 3 этажа 
+                      span.mob_hidden  <br> 
+                      |  Кантри  
+                      span.mob_hidden  <br>
+                      |  пр.&nbsp;Тракторо&shy;строи&shy;телей 
+                  .swiper-slide
+                    .slide_title Частный дом 2 этажа 
+                      span.mob_hidden  <br>
+                      |  Классика 
+                      span.mob_hidden  <br>
+                      |  Бабаи
+                  .swiper-slide
+                    .slide_title Баня в частном доме 
+                      span.mob_hidden  <br>
+                      |  Кантри 
+                      span.mob_hidden  <br>
+                      |  Бабаи
+                      
+              #photos_info.swiper-container.photos_info
+                .swiper-wrapper.clearfix
+                  .swiper-slide
+                    .slide_info
+                      p Перепланировка: из 2-х комнатной квартиры в студию с 1-й спальней  <br> 
+                        | Пол :  бетонирование + стяжка,  ламинат, плитка, балкон - теплый пол  <br> 
+                        | Стены :  шпатлевка под покраску,  флизелин + покраска
+                        | Потолок:   гипсокартон + стеклохолст + покраска,  натяжной потолок  <br> 
+                        | Электрика : выключатели + розетки - 40 точек  <br> 
+                        | Сантехника: ванна, душевая шторка, унитаз встроенный, роковина, бойлер,  стиральная машинка
+                      p Площадь общая : 46,5 м2  <br> 
+                        | Стоимость работ: 2600 грн/м2 
+                      p
+                        a.gl_link(href='#') Как рассчитать бюджет на ремонт?
+                        
+                  .swiper-slide
+                    .slide_info
+                      p Планировка: чешка - 2 комнаты  <br> 
+                        | Пол :  выравнивание,  ламинат, плитка, коридор и санузел - теплый пол  <br> 
+                        | Стены :  выравнивание, шпатлевка под обои,  обои, балкон - вагонка из липы  <br> 
+                        | Потолок:   гипсокартон + флизелин + покраска  <br> 
+                        | Электрика : выключатели + розетки - 56 точек  <br> 
+                        | Сантехника: ванна, унитаз, роковина, бойлер, стиральная машинка
+                      p Площадь общая : 48,8 м2  <br> 
+                        | Стоимость работ: 2150 грн/м2
+                      
+                  .swiper-slide
+                    .slide_info
+                      p Планировка: индивидуальный проект  <br> 
+                        | Пол :  бетонирование + стяжка,  ламинат, плитка, теплый пол  <br> 
+                        | Стены :  штукатурка, шпатлевка под обои,  обои, декоративная штукатурка, плитка  <br> 
+                        | Потолок:   гипсокартон + флизелин + покраска  <br> 
+                        | Электрика : выключатели + розетки - 168 точек  <br> 
+                        | Сантехника: ванна гидромассажная, ванная, унитаз встроенный - 3, биде - 2, роковина -3, 		      бойлер - 2, стиральная машинка <br>
+                        | Особенности: баня, бассейн, камин
+                      
+                      p Площадь общая : 376 м2  <br> 
+                        | Стоимость работ: 4200 грн/м2 
+                        
+                  .swiper-slide
+                    .slide_info
+                      p Планировка: индивидуальный проект  <br> 
+                        | Пол :  бетонирование + стяжка,  ламинат, плитка, теплый пол  <br> 
+                        | Стены :  шпатлевка под обои,  обои, декоративная штукатурка  <br> 
+                        | Потолок:   гипсокартон + стеклохолст + покраска  <br> 
+                        | Электрика : выключатели + розетки - 69 точек  <br> 
+                        | Сантехника: гидромассажный бокс - 2, унитаз - 2, роковина - 4, бойлер, стиральная машинка
+                      p Площадь общая : 172  м2  <br> 
+                        | Стоимость строительных работ: ???? грн/м2
+                        | Стоимость отделочных работ: 3200 грн/м2
+                      
+                  .swiper-slide
+                    .slide_info
+                      p Планировка: индивидуальный проект  <br> 
+                        | Пол :  бетонирование + стяжка, плитка, теплый пол  <br> 
+                        | Стены :  штукатурка, искусственный камень, декоративная штукатурка, вагонка из липы  <br> 
+                        | Потолок:   натяжной потолок  <br> 
+                        | Электрика : выключатели + розетки - 29 точек  <br> 
+                        | Сантехника: душевая кабинка, унитаз, роковина, котел электрический  <br> 
+                        | Особенности: бассейн, парилка, комната отдыха
+                      p Площадь общая : 45 м2  <br> 
+                        | Стоимость работ: 3500 грн/м2
+                
+          h2.gl_caption.edged_caption.block_caption
+            span работы наших дизайнеров
+
+          .block_text Ремонт без дизайн проекта, как путешествие без карты -     <br>     никогда не знаешь куда попадешь.
+
+          +design_tabs('gray_scale')
+          
+          h2.gl_caption.edged_caption.block_caption
+            span от проекта до реализации
+
+          .block_text Точность во всех деталях приводит к полному соответствию   <br>       поставленной цели и результата.
+
+          .projectsSlider.swiper_btn_v1.project_slider
+            .swiper-container
+              .swiper-wrapper.clearfix
+                  .swiper-slide
+                    ul.project_slide.clearfix
+                      li
+                        .works_img(): img(src='i/portfolio/compare/1v.jpg')
+                      li
+                        .works_img(): img(src='i/portfolio/compare/1r.jpg')
+                        
+                  .swiper-slide
+                    ul.project_slide.clearfix
+                      li
+                        .works_img(): img(src='i/portfolio/compare/2v.jpg')
+                      li
+                        .works_img(): img(src='i/portfolio/compare/2r.jpg')
+                        
+                  .swiper-slide
+                    ul.project_slide.clearfix
+                      li
+                        .works_img(): img(src='i/portfolio/compare/3v.jpg')
+                      li
+                        .works_img(): img(src='i/portfolio/compare/3r.jpg')
+                        
+                        
+            .works_caption Визуализация нашего дизайнера
+            .works_caption Реализованный нами проект
+
+            .swiper-button-prev
+            .swiper-button-next
+            .swiper-pagination
+
+      +footer()
+    +popups()

@@ -1,0 +1,131 @@
+include mixins
+doctype html
+html(lang='ru')
+  +dev_head('Real Снабжение', false, false, true)
+
+  body.inner_page
+    .rect_1024
+    .wrapper
+      +header(9)
+
+      .base
+        section.section_w.white_section: .section_inner.article_mode.gray_inner
+          h2.gl_caption.edged_caption.block_caption.mt_40
+            span Снабжение материалами
+
+          .block_text Для достижения отличного реультата нужны соответствующие  <br>   материалы. Мы обеспечим поставку качественных  <br>   материалов для каждого этапа. Посмотрите ниже, что Вам  <br>   понадобиться.
+
+          .supply_holder: ul#grid.supply_list
+            li.box.size28.tall: .supply_item.box_white
+              .supply_img: img(src='i/supply/heating.jpg')
+              .supply_info
+                h3 отопление
+                p Радиаторы настеные. Трубы. Котлы газовые и электрические
+            li.box.size21.wide: .supply_item.box_white
+              .supply_img: img(src='i/supply/stroy.jpg')
+              .supply_info
+                h3 общие строительные материалы
+                p Кирпич. Цемент. Керамзит. Песок. Утеплитель. OSB. Гипсокартон. Брус.
+            li.box.size11.round_mod: .supply_item.round_mod.text_center
+              .supply_img: img.packerySizer(src='i/supply/suh_smesi.jpg')
+              .supply_info
+                h3 Сухие смеси 
+                p Клея для плитки и г/к. Шпатлевки.  Гипсовые штукатурки.
+            li.box.size11: .supply_item.box_white
+              .supply_img: img(src='i/supply/oboi.jpg')
+              .supply_info
+                h3 Обои
+                p  Флизелиновые. Жидкие. аневые. Металлизироанные. 
+            li.box.size11.round_mod: .supply_item.round_mod.text_center
+              .supply_img: img(src='i/supply/shtukaturka.jpg')
+              .supply_info
+                h3 Декоративная штукатурка
+                p Венецианкская. Структурная.  <br>    Фактурная. Минеральная.
+            li.box.size12.tall: .supply_item.box_white
+              .supply_img: img(src='i/supply/plitka.jpg')
+              .supply_info
+                h3 плитка
+                p Керамическая. Клинкер. Керамогранит.  Тротуарная.
+
+            li.box.size21.wide: .supply_item.box_white
+              .supply_img: img(src='i/supply/santehnika.jpg')
+              .supply_info
+                h3 сантехника
+                p Ванны. Душевые кабины. Умывальники. Унитазы. Биде. Инсталляции.
+            li.box.size21.wide: .supply_item.box_white
+              .supply_img: img(src='i/supply/floor.jpg')
+              .supply_info
+                h3 напольные покрытия
+                p Массивная и паркетная доска. Штучный паркет. Ламинат. Натуральный линолеум. Ковролин. Плинтус.
+            li.box.size11: .supply_item.box_white
+              .supply_img: img(src='i/supply/smesiteli.jpg')
+              .supply_info
+                h3 смесители
+                p Встраиваемые и наружные. Термостаты. Душевые штанги.
+
+
+            li.box.size11: .supply_item.box_white
+              .supply_img: img(src='i/supply/peregorodki.jpg')
+              .supply_info
+                h3 Раздвижные перегородки
+                p Настенные. Потолочные.  <br>  Кассетные.
+
+            li.box.size11.round_mod: .supply_item.round_mod.text_center
+              .supply_img: img(src='i/supply/doors.jpg')
+              .supply_info
+                h3 двери
+                p Стекло. Шпон. Покраска. Глянец.  Кожа. Массив. Ламинатин.
+
+            li.box.size12.tall: .supply_item.box_white
+              .supply_img: img(src='i/supply/svet.jpg')
+              .supply_info
+                h3 освещение
+                p Люстры. Торшеры. Бра. Светильники. Светодиодное.
+
+            li.box.size11: .supply_item.box_white
+              .supply_img: img(src='i/supply/shtori.jpg')
+              .supply_info
+                h3 шторы
+                p Тканевые. Гардины. Римские. Жалюзи. Ролеты.
+
+            li.box.size11.round_mod: .supply_item.round_mod.text_center
+              .supply_img: img(src='i/supply/okna.jpg')
+              .supply_info
+                h3 окна
+                p Металлопластиковые. Деревянные.  Алюминиевые.
+
+            li.box.size11: .supply_item.box_white
+              .supply_img: img(src='i/supply/kondicioneri.jpg')
+              .supply_info
+                h3 кондиционеры
+                p Настенные. Потолочные. Кассетные. Канальные.
+
+            li.box.size21.wide: .supply_item.box_white
+              .supply_img: img(src='i/supply/elektrika.jpg')
+              .supply_info
+                h3 электрика
+                p Розетки. Выключатели. Теплый пол. Реле. Автоматы. Стабилизаторы. Кабельно-проводниковая продукция. 
+
+            li.box.size11: .supply_item.box_white
+              .supply_img: img(src='i/supply/potolki.jpg')
+              .supply_info
+                h3 натяжные потолки
+                p ПВХ - глянец и мат. Тканевые.
+
+            li.box.large.size31: .supply_item.box_white
+              ul.supply_img_list.clearfix
+                li.supply_img: .supply_img_h: img(src='i/supply/mebel_corp_1.jpg')
+                li.supply_img: .supply_img_h: img(src='i/supply/mebel_corp_2.jpg')
+                li.supply_img: .supply_img_h: img(src='i/supply/mebel_corp_3.jpg')
+              .supply_info
+                h3 мебель корпусная
+                p Кухни. Гардеробные. Шкафы-купе. Столы. Комоды. Полки. Тумбы. Трюмо. Стелажи. Стенки мебельные.
+
+            li.box.size11.round_mod: .supply_item.round_mod.text_center
+              .supply_img: img(src='i/supply/mebel_myagkaya.jpg')
+              .supply_info
+                h3 мебель мягкая
+                p  Диваны. Кровати. Кресла. Пуфы.
+
+      +footer()
+    +popups()

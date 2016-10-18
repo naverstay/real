@@ -1,0 +1,154 @@
+include mixins
+doctype html
+html(lang='ru')
+  +dev_head('Real Дизайн и проектирование', false, false, false, false, false, true)
+
+  body.inner_page
+    .rect_1024
+    .wrapper
+      +header(7)
+
+      .base
+        section.section_w.white_section: .section_inner.article_mode.clearfix
+          .photo_slider
+            .slider_holder.swiper_btn_v1.design_mod.galSlider: #photos_gallery.gallery_container
+                .gallery_slide(class='swiper-slide-active')
+                  .swiper-container
+                    .swiper-wrapper.clearfix
+                      .swiper-slide
+                        +photo_slide('i/project_1.png')
+                      .swiper-slide
+                        +photo_slide('i/project_2.png')
+                  #gal_prev.swiper-button-prev
+                  #gal_next.swiper-button-next
+                  .swiper-pagination
+                .slider_title.onScrollLoader(data-scroll-class='move_it' data-scroll-offset='-70')
+                  h2 Зачем нужен дизайн проект
+                  p.dt_only 
+                    | Дизайн проект квлючает в себя комплект технических чертежей 
+                    //- span.dt_only <br> 
+                    | и спецификаций, а так же визуализацию
+                  
+            .photo_slider_description.clearfix.photoSliderDescription
+              #bullet_pagination.swiper-pagination.bullet_pagination
+
+              #photos_titles.swiper-container.photos_titles
+                .swiper-wrapper.clearfix
+                  .swiper-slide
+                    .slide_title Дизайн-проект интерьера
+                      |  <br> 
+                      | Визуализация
+                  .swiper-slide
+                    .slide_title Дизайн-проект интерьера
+                      |  <br> 
+                      | Чертежи
+
+              #photos_info.swiper-container.photos_info
+                .swiper-wrapper.clearfix
+                  .swiper-slide
+                    .slide_info
+                      p 3d Визуализация интерьера это ваша возможность «увидеть товар перед покупкой». 
+                        | Согласитесь,сейчас уже никто не тратит деньги в слепую. Выслушав Ваши пожелания, 
+                        | дизайнер визуализирует их, гармонично оформив в один стиль. Каждый из нас эксперт
+                        | своего дела, но не у каждого получится создать красоту в сочетании с удобством.  <br> 
+                        | Какие возможности Вы не получите, не имея визуализации:  <br> 
+                        | - бесплатно и быстро изменить планировку, цвет отделки, размещение мебели, если
+                        | готовый интерьер Вам не понравится. Фантазия не всегда рисует объективные картины, 
+                        | не имея визуализации, создать гармонию из отдельных деталей довольно тяжело.  <br> 
+                        | - просчитать расходы на отделочные материалы - а это 80% расходов всего ремонта.  <br> 
+                        | Утвердив визуализацию, вы уже понимаете какой вид отделки и стиль мебели для Вас 
+                        | оптимален, а значит имеете сумму расходов с погрешностью в 10-15% а не в 100%.
+                      p
+                        a.gl_link(href='knowledge_choose.html') С чего начать ремонт?
+                        
+                  .swiper-slide
+                    .slide_info
+                      p Основная задача всей           
+                        a.gl_link(href='#') технической документации
+                        |  дизайн-проекта обеспечить удобство и соответствие помещения его назначению и Вашим требованиям.  <br> 
+                        | В комплекте чертежей опытный дизайнер задает и связывает оптимальные параметры 
+                        | размещения всех элементов интерьера :  <br> 
+                        | розетки размещены с учетом будущей техники, выключатели не перекрывает мебель,
+                        | проход к раковине не загораживает унитаз, а открыванию двери не мешает стол.  <br> 
+                        | Не секрет, что то что мы думаем, что говорим, и то что слышит наш собеседник - это 
+                        | 3 разные «что». Именно поэтому и возникает множество разногласий между заказчиком и 
+                        | его бригадой на тему «кто что кому сказал». А если есть чертеж с разметкой и указанными 
+                        | размерами вероятность ошибок минимальна, а необходимость переделать неоспорима.
+                      p
+                        a.gl_link(href='#') Стили и направления в дизайне интерьера
+
+          h2.gl_caption.edged_caption.block_caption
+            span работы наших дизайнеров
+
+          .block_text Ремонт без дизайн проекта, как путешествие без карты -     <br>     никогда не знаешь куда попадешь.
+
+          +design_tabs()
+                
+          h2.gl_caption.edged_caption.block_caption
+            span Что мы предлагем
+
+          .projectsSlider.swiper_btn_v1.project_slider.design_mod
+            .swiper-container
+              .swiper-wrapper.clearfix
+                .swiper-slide
+                  ul.project_slide.clearfix.right_mod
+                    li
+                      .works_img(): img(src='i/design_project_1.jpg')
+                    li
+                      .design_project_block
+                        h4.design_p_caption Архитектурный проект
+                        p Разработка уникального проекта вашего дома,   <br>  или любого коммерческого здания
+                        p Этапы:  <br> 
+                          | 1. Эскизный проект.  <br> 
+                          | 2. Архитектурный проект.  <br> 
+                          | 3. Рабочий проект.
+
+                .swiper-slide
+                  ul.project_slide.clearfix.right_mod
+                    li
+                      .works_img(): img(src='i/design_project_2.jpg')
+                    li
+                      .design_project_block
+                        h4.design_p_caption Дизайн проект
+                        p Создание дизайн-проекта интерьера квартиры, дома, офисного или коммерческого помещения.
+                        p Этапы:  <br> 
+                          | 1. Техническое задание.  <br> 
+                          | 2. Планировочное решение.  <br> 
+                          | 3. 3D Визуализация интерьера.  <br> 
+                          | 4. Пакет чертежей, специкаций и ведомостей.
+                        
+                .swiper-slide
+                  ul.project_slide.clearfix.right_mod
+                    li
+                      .works_img(): img(src='i/design_project_3.jpg')
+                    li
+                      .design_project_block
+                        h4.design_p_caption Проектирование мебели
+                        p Проектирование всех видов мебели                      и торгового оборудования
+                        p Этапы:  <br> 
+                          | 1. Техническое задание.  <br> 
+                          | 2. 3D Визуализация мебели.  <br> 
+                          | 3. Чертеж.
+                        
+                .swiper-slide
+                  ul.project_slide.clearfix.right_mod
+                    li
+                      .works_img(): img(src='i/design_project_4.jpg')
+                    li
+                      .design_project_block
+                        h4.design_p_caption Ландшафтный дизайн
+                        p Ландшафтное проектирование участков, газонов,  коммерческих площадок
+                        p Этапы:  <br> 
+                          | 1. Техническое задание.  <br> 
+                          | 2. Эскиз ландшафтного проекта.  <br> 
+                          | 3. Пакет чертежей.
+
+            .swiper-button-prev
+            .swiper-button-next
+            .swiper-pagination
+          
+          ul.more_links_block  
+            li.more_link_item: a.gl_link(href='price.html') Цены на дизайн и проектирование
+
+      +footer()
+    +popups()

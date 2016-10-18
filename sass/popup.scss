@@ -1,0 +1,173 @@
+.popup_holder {
+  display : none;
+}
+
+.fancybox-wrap {
+  &.fancy_popup .fancybox-skin {
+    background : #f0f0f1;
+  }
+}
+
+.popup_form {
+  max-width : 100%;
+
+  @include respond-to-min($tablet) {
+    padding : 8px 30px;
+  }
+}
+
+.popup_f_caption {
+  color          : #000;
+  font           : 36px $antquab;
+  margin-bottom  : 10px;
+  letter-spacing : 1px;
+
+  @include respond-to-min($tablet) {
+    margin-bottom : 27px;
+  }
+}
+
+.popup_box_holder {
+  //@extend %clearfix;
+  //margin-left : -49px;
+
+  @include respond-to-min($tablet) {
+    display      : table;
+    width        : 100%;
+    height       : 100%;
+    table-layout : fixed;
+
+    .popup_box {
+      display        : table-cell;
+      vertical-align : top;
+      height         : 100%;
+
+      &:first-child {
+        padding-right : 16px;
+
+        + .popup_box {
+          padding-left : 35px;
+        }
+      }
+    }
+  }
+}
+
+.popup_box {
+
+  &:first-child {
+
+    > p:first-child {
+      border-top  : 6px solid #d3d3d3;
+      padding-top : 8px;
+    }
+  }
+
+  > p {
+    font-size     : 15px;
+    line-height   : 20px;
+    color         : #8d8d8d;
+    margin-bottom : 17px;
+  }
+
+  .f_cell {
+    margin-top : 17px;
+  }
+
+  @include respond-to-min($tablet) {
+    //float : left;
+    //width : 50%;
+
+    &:first-child {
+      > p:first-child {
+        padding-top : 28px;
+      }
+    }
+
+    .f_cell {
+
+      &:first-child {
+        margin-top : 0;
+      }
+    }
+  }
+
+}
+
+.f_cell {
+  position : relative;
+}
+
+.full_h {
+  height   : 100%;
+  position : relative;
+}
+
+.f_input_v1 {
+  background : #fff;
+  border     : 1px solid #d4d4d4;
+  color      : #393939;
+  font       : 15px 'GothicReg', sans-serif;
+  width      : 100%;
+  display    : block;
+}
+
+input.f_input_v1 {
+  line-height : 21px;
+  padding     : 10px;
+
+  @include respond-to-min($tablet) {
+    max-width : 355px;
+  }
+}
+
+textarea.f_input_v1 {
+  padding    : 20px 15px;
+  min-height : 150px;
+
+  @include respond-to-min($tablet) {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    height   : 100%;
+  }
+
+}
+
+.popup_btn_holder {
+  @extend %clearfix;
+  margin : 20px 0 10px;
+
+  .btn_v1 {
+    float          : right;
+    text-transform : uppercase;
+  }
+
+  @include respond-to-min($tablet) {
+    margin-top : 35px;
+  }
+}
+
+.btn_v1 {
+  padding     : 0 18px;
+  height      : 34px;
+  line-height : 34px;
+  font-size   : 14px;
+}
+
+.btn_black {
+  @include transition_all(border-radius .3s);
+  background : #000;
+  color      : #fff;
+  position   : relative;
+
+  &:hover {
+    text-shadow : 0px 0px 5px rgba(255, 255, 255, .85);
+  }
+
+  &:active {
+    border-radius : 4px;
+    box-shadow    : inset 0 0 10px darken(#f8f5b9, 20%);
+  }
+
+}
